@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+nav>a {
+    text-decoration: none;
+    float: left;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+.dropdown {
+    float: left;
+    position: relative;
+}
+.dropbtn {
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+.dropcontent {
+    position: absolute;
+    width: 160px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    z-index: 1;
+    display: none;
+}
+.dropcontent a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+.dropdown:hover .dropcontent {
+    display: block;
+}
+nav a:hover, .dropbtn:hover {
+    background-color: #CACACA;
+    color: black;
+}
+.right {
+    float: right;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+.right:hover {
+    background-color: #F44336;
+    cursor: pointer;
+}
+.slidecontainer {
+    width: 100%;
+    height: 680px;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+.slider .city {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+.slider .text {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.theband {
+    width: 65%;
+    margin: auto;
+    padding-top: 5%;
+}
+.theband h1 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+.theband span {
+    text-align: center;
+    display: block;
+    margin-top: 3%;
+    font-style: italic;
+    color: gray;
+    letter-spacing: 2px;
+}
+.theband p {
+    margin-top: 3%;
+    text-align: justify;
+    font-size: 17px;
+}
+.imgname {
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+}
+.imgname .name {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 10%;
+}
+.name p {
+    text-align: center;
+    padding: 10px;
+}
+.imgname img {
+    width: 100%;
+    height: auto;
+}
+.tour {
+    margin-top: 10%;
+    max-width: 100%;
+    height: 800px;
+    background-color: black;
+    position: relative;
+}
+.tour h1 {
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 8%;
+    letter-spacing: 5px;
+}
+.tour p {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    padding: 3%;
+}
+.tablecontainer {
+    background-color: red;
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+.tablecontainer table {
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+}
+.tablecontainer td {
+    border-bottom: 1px solid gray;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    color: grey;
+    float: left;
+    overflow: hidden;
+}
+.tablecontainer span {
+    background-color: #F44336;
+    color: white;
+    padding: 5px;
+    margin-left: 15px;
+}
+.tablecontainer .number {
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px 2px 8px;
+    margin-right: 35px;
+}
+.ticketcontainer {
+    margin: auto;
+    width: 65%;
+    height: auto;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+}
+.imgcontainer {
+    width: 31%;
+    height: auto;
+    background-color: white;
+    flex: 1;
+}
+.imgcontainer button:hover {
+    background-color: #CCCCCC;
+    color: black;
+}
+.imgcontainer img {
+    width: 100%;
+}
+.imgcontainer img:hover {
+    opacity: .8;
+}
+.imgcontainer p {
+    text-align: left;
+}
+.imgcontainer h4,.imgcontainer span,.imgcontainer button {
+    margin: 10px;
+}
+.imgcontainer button {
+    background-color: black;
+    color: white;
+    outline: none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.model {
+    width: 80%;
+    height: 500px;
+    background: white;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    left: 10%;
+    display: none;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+}
+.animate {
+    animation: animatezoom .6s;
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+.model .close {
+    float: right;
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.model .close:hover {
+    background-color: gray;
+    color: white;
+}
+.suitcase {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    background-color: #008080;
+    color: white;
+}
+.model p {
+    padding: 15px;
+}
+.model input[type=text] {
+    width: 96%;
+    margin: 15px;
+    padding: 10px 0px;
+}
+.model button {
+    width: 96%;
+    margin: 15px;
+    padding: 20px 0px;
+    background-color: #008080;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.model button:hover {
+    background-color: grey;
+    color: black;
+}
+.model .cls {
+    width: 100px;
+    background-color: #F44336;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+.contact {
+    width: 100%;
+    height: 450px;
+}
+.contact .cnt {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.contact span {
+    text-align: center;
+    font-style: italic;
+    display: block;
+    padding: 20px;
+    color: grey;
+}
+.textcontainer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.textcontainer .left {
+    height: 100%;
+    background-color: white;
+    float: left;
+    display: inline-block;
+    position: absolute;
+}
+.textcontainer .right {
+    width: 500px;
+    background-color: white;
+    float: left;
+    display: inline-block;
+    position: absolute;
+    left: 700px;
+}
+.font {
+    font-size: 20px;
+}
+.left pre {
+    margin: 10px 200px;
+}
+.right input[type=text]{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+.right button {
+    padding: 10px 15px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    float: right;
+    margin: 15px;
+}
+.map {
+    width: 100%;
+    height: auto;
+}
+.map img {
+    width: 100%;
+}
+.iconcontainer {
+    width: 100%;
+}
+.iconcontainer .icons {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+}
+.iconcontainer p i:hover {
+    opacity: .4;
+}
+.iconcontainer .powered {
+    text-align: center;
+    display: block;
+    font-style: i;
+    margin: 20px 0px;
+}
